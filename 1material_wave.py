@@ -40,7 +40,8 @@ u1, w = TrialFunction(V), TestFunction(V)
 # Material properties
 ##E, nu, rho = 500E+3, 0.35, 1750.0
 rho = float(sys.argv[1])
-E, nu = 500E+3, 0.35
+E = float(sys.argv[2])
+nu = 0.35
 eta = 0.2
 lam=E*nu/((1.0+nu)*(1.0-2.0*nu))
 mu=E/(2.0*(1.0+nu))
