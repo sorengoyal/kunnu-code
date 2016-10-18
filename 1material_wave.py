@@ -89,7 +89,7 @@ solver = LinearVariationalSolver(problem)
 solver.parameters["linear_solver"] = "cg"
 
 #Time stepping and solution
-file = File("rho" + str(rho) + "/02DAMPING/compareEPeta02.pvd")
+file = File("rho" + str(rho) + "_E" + str(E) + "/02DAMPING/compareEPeta02.pvd")
 count=0
 while t <= T:
  t += dt
